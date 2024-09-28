@@ -1,11 +1,21 @@
 {
   "name": "tweet-viva",
+  "type": "module",
   "version": "1.0.0",
-  "description": "a full stack video stremming app with inbuilt small social social",
+  "description": "a full stack video stremming app with inbuilt small social media",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mongoose": "^8.7.0"
+  }
 }
